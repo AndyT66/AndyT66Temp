@@ -1,0 +1,15 @@
+--- original/src/org/dspace/content/Item.java     2007-05-03 16:42:51.000000000 +0100
++++ src/org/dspace/content/Item.java      2007-05-24 13:57:40.000000000 +0100
+@@ -318,7 +318,11 @@
+      */
+     public String getHandle()
+     {
+-        return handle;
++        try {
++            return HandleManager.findHandle(ourContext,this);
++        } catch (SQLException t) {}
++        return null;
++//        return handle;
+     }
+ 
+     /**

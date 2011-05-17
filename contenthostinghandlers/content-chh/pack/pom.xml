@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>content-chh-base</artifactId>
+    <groupId>org.sakaiproject</groupId>
+    <version>2.5.4</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+  <name>sakai-content-chh-pack</name>
+  <groupId>org.sakaiproject</groupId>
+  <artifactId>sakai-content-chh-pack</artifactId>
+  <organization>
+    <name>University of Cambridge (UK)</name>
+    <url>http://sakaiproject.org/</url>
+  </organization>
+  <inceptionYear>2006</inceptionYear>
+  <packaging>sakai-component</packaging>
+  <properties>
+    <deploy.target>components</deploy.target>
+  </properties>
+  <dependencies>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-content-chh</artifactId>
+      <version>2.5.4</version>
+      <type>POM</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-util</artifactId>
+      <version>2.5.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-db-storage</artifactId>
+      <version>2.5.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-entity-util</artifactId>
+      <version>2.5.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-event-util</artifactId>
+      <version>2.5.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>jackrabbit-core</artifactId>
+      <version>1.4</version>
+      <type>jar</type>
+	</dependency>
+	
+    <dependency>
+      <groupId>org.apache.jackrabbit</groupId>
+      <artifactId>jackrabbit-api</artifactId>
+      <version>1.4</version>
+      <type>jar</type>
+	</dependency>	
+	
+    <dependency>
+      <groupId>jcr</groupId>
+      <artifactId>jcr</artifactId>
+      <version>1.0</version>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources/>
+<!-- java source -->
+  </build>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="uk.ac.cam.caret.ContentHostingHandlerImplFileSystem.0000"
+			class="org.sakaiproject.content.chh.file.ContentHostingHandlerImplFileSystem"
+			singleton="true">
+			<property name="contentHostingHandlerResolver" ><ref bean="org.sakaiproject.content.api.ContentHostingHandlerResolver"/></property>
+	</bean>
+	<bean id="uk.ac.cam.caret.ContentHostingHandlerImplDSpace.0000"
+			class="org.sakaiproject.content.chh.dspace.ContentHostingHandlerImplDSpace"
+			singleton="true">
+			<property name="contentHostingHandlerResolver" ><ref bean="org.sakaiproject.content.api.ContentHostingHandlerResolver"/></property>
+	</bean>
+	<bean id="uk.ac.cam.caret.ContentHostingHandlerImplJCR.0000"
+			class="org.sakaiproject.content.chh.jcr.ContentHostingHandlerImplJCR"
+			singleton="true">
+			<property name="contentHostingHandlerResolver" ><ref bean="org.sakaiproject.content.api.ContentHostingHandlerResolver"/></property>
+	</bean>
+</beans>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="uk.ac.cam.caret.ContentHostingHandlerImplFileSystem.0000"
+			class="org.sakaiproject.content.chh.file.ContentHostingHandlerImplFileSystem"
+			singleton="true">
+			<property name="contentHostingHandlerResolver" ><ref bean="org.sakaiproject.content.api.ContentHostingHandlerResolver"/></property>
+	</bean>
+	<bean id="uk.ac.cam.caret.ContentHostingHandlerImplDSpace.0000"
+			class="org.sakaiproject.content.chh.dspace.ContentHostingHandlerImplDSpace"
+			singleton="true">
+			<property name="contentHostingHandlerResolver" ><ref bean="org.sakaiproject.content.api.ContentHostingHandlerResolver"/></property>
+	</bean>
+	<bean id="uk.ac.cam.caret.ContentHostingHandlerImplJCR.0000"
+			class="org.sakaiproject.content.chh.jcr.ContentHostingHandlerImplJCR"
+			singleton="true">
+			<property name="contentHostingHandlerResolver" ><ref bean="org.sakaiproject.content.api.ContentHostingHandlerResolver"/></property>
+	</bean>
+	<bean id="uk.ac.uhi.it.ContentHostingHandlerImplFedora"
+			  class="org.sakaiproject.content.chh.fedora.ContentHostingHandlerImplFedora"
+			  singleton="true">
+			  
+	  <property name="contentHostingHandlerResolver" >
+	    <ref bean="org.sakaiproject.content.api.ContentHostingHandlerResolver"/>
+	  </property>
+
+    <property name="repoFactory" >
+      <ref bean="uk.ac.uhi.ral.impl.fedora.FedoraDigitalRepositoryFactory"/>
+    </property>
+	
+  </bean>
+
+  <bean id="uk.ac.uhi.ral.impl.fedora.FedoraDigitalRepositoryFactory"
+        class="uk.ac.uhi.ral.impl.fedora.FedoraDigitalRepositoryFactory">        
+<!--       
+    <property name="keystorePath"><value>/Users/alistair/dev/sakai/tomcat/apache-tomcat-5.5.25/components/sakai-content-chh-fedora-pack/WEB-INF/fedora/truststore</value></property>
+    <property name="keystorePassword"><value>tomcat</value></property>
+    <property name="truststorePath"><value>/Users/alistair/dev/sakai/tomcat/apache-tomcat-5.5.25/components/sakai-content-chh-fedora-pack/WEB-INF/fedora/truststore</value></property>
+    <property name="truststorePassword"><value>tomcat</value></property>
+    <property name="debug"><value>true</value></property>
+    <property name="debugOutputPath"><value>/Users/alistair/Desktop</value></property>
+-->
+  <property name="keystorePath">
+  <value>C:\Sun\SDK\domains\domain1\config\keystore.jks</value> 
+  </property>
+  <property name="keystorePassword">
+  <value>changeit</value> 
+  </property>
+  <property name="truststorePath">
+  <value>C:\Sun\SDK\domains\domain1\config\cacerts.jks</value> 
+  </property>
+  <property name="truststorePassword">
+  <value>changeit</value> 
+  </property>
+  <property name="debug">
+  <value>true</value> 
+  </property>
+  <property name="debugOutputPath">
+  <value>C:\apache-tomcat-5.5.28\logs</value> 
+  </property>    
+  </bean>
+
+  <!--
+    The Fedora mount point resource is a properties style file. You can copy/paste this template
+    and customise for your Fedora. When you upload the file, set the mountpoint to:
+
+    uk.ac.uhi.it.ContentHostingHandlerImplFedora
+
+    template:
+    
+    api-a.endpoint=http://your.fedora.url/fedora/services/access
+    api-m.endpoint=http://your.fedora.url/fedora/services/management
+    dissemination.endpoint=https://sgarbh.smo.uhi.ac.uk:8101/fedora/get
+    upload.url=https://your.fedora.url/fedora/management/upload
+    connection.username=USERNAME
+    connection.password=PASSWORD
+
+  -->
+</beans>

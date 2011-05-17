@@ -1,0 +1,560 @@
+diff -U3 -r src/org/dspace/app/dav/DAVBitstream.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVBitstream.java
+--- src/org/dspace/app/dav/DAVBitstream.java	2006-01-18 04:39:15.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVBitstream.java	2007-04-17 15:17:42.000000000 +0100
+@@ -537,4 +537,20 @@
+         }
+         return null;
+     }
++
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for BitStream.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for BitStream.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVCollection.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVCollection.java
+--- src/org/dspace/app/dav/DAVCollection.java	2006-03-25 06:46:36.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVCollection.java	2007-04-19 11:03:33.000000000 +0100
+@@ -61,6 +61,7 @@
+ import org.dspace.content.Item;
+ import org.dspace.content.ItemIterator;
+ import org.dspace.content.Collection;
++import org.dspace.content.Community;
+ import org.dspace.content.DSpaceObject;
+ import org.dspace.content.WorkspaceItem;
+ import org.dspace.content.InstallItem;
+@@ -441,4 +442,22 @@
+         throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
+             "COPY method not implemented for Collection.");
+     }
++
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        Community[] ca = collection.getCommunities();
++        if (ca != null) for (int i = 0 ; i < ca.length ; ++i) ca[i].removeCollection(collection);
++//        collection.delete();
++        return HttpServletResponse.SC_OK; // HTTP OK
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for Collection.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVCommunity.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVCommunity.java
+--- src/org/dspace/app/dav/DAVCommunity.java	2005-11-23 06:17:17.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVCommunity.java	2007-04-17 15:16:59.000000000 +0100
+@@ -268,6 +268,24 @@
+         throws DAVStatusException, SQLException, AuthorizeException, IOException
+     {
+         throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
+-            "COPY method not implemented for Collection.");
++            "COPY method not implemented for Community.");
++    }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        Community c = community.getParentCommunity();
++        if (c != null) c.removeSubcommunity(community);
++        community.delete();
++        return HttpServletResponse.SC_OK;
++    }
++
++    protected int mkcolInternal(String name)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        Collection newColl = community.createCollection();
++        newColl.setMetadata("name",name);
++        newColl.update();
++        return HttpServletResponse.SC_OK;
+     }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVEPersonEPerson.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVEPersonEPerson.java
+--- src/org/dspace/app/dav/DAVEPersonEPerson.java	2006-01-14 06:20:46.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVEPersonEPerson.java	2007-04-17 15:18:35.000000000 +0100
+@@ -284,4 +284,19 @@
+         throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
+             "COPY method not implemented for eperson.");
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for eperson.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for eperson.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVEPerson.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVEPerson.java
+--- src/org/dspace/app/dav/DAVEPerson.java	2006-01-14 04:40:15.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVEPerson.java	2007-04-17 15:18:47.000000000 +0100
+@@ -205,4 +205,19 @@
+         throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
+             "COPY method not implemented for eperson.");
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for eperson.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for eperson.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVInProgressSubmission.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVInProgressSubmission.java
+--- src/org/dspace/app/dav/DAVInProgressSubmission.java	2005-10-21 04:11:49.000000000 +0100
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVInProgressSubmission.java	2007-04-17 15:19:13.000000000 +0100
+@@ -259,4 +259,19 @@
+     {
+         return DAVItem.addItemToCollection(context, inProgressItem.getItem(), destination, overwrite);
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for InProgressSubmission.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for InProgressSubmission.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVItem.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVItem.java
+--- src/org/dspace/app/dav/DAVItem.java	2006-05-03 07:58:39.000000000 +0100
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVItem.java	2007-04-17 15:19:22.000000000 +0100
+@@ -462,4 +462,19 @@
+         destColl.addItem(item);
+         return DAV.SC_NO_CONTENT;
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        item.withdraw();
++        return HttpServletResponse.SC_OK; // HTTP OK
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for Item.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVLookup.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVLookup.java
+--- src/org/dspace/app/dav/DAVLookup.java	2006-03-27 23:08:33.000000000 +0100
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVLookup.java	2007-04-17 15:20:17.000000000 +0100
+@@ -336,4 +336,19 @@
+     {
+         return null;
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for Lookup.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for Lookup.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVResource.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVResource.java
+--- src/org/dspace/app/dav/DAVResource.java	2006-03-28 00:40:52.000000000 +0100
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVResource.java	2007-04-17 15:17:14.000000000 +0100
+@@ -215,6 +215,7 @@
+      * @throws SQLException
+      * @throws AuthorizeException
+      * @throws IOException
++     * @throws DAVStatusException
+      */
+     abstract protected int proppatchInternal(int action, Element prop)
+         throws SQLException, AuthorizeException, IOException, DAVStatusException;
+@@ -226,6 +227,7 @@
+      * @throws AuthorizeException
+      * @throws IOException
+      * @throws ServletException
++     * @throws DAVStatusException
+      */
+     abstract protected void get()
+         throws SQLException, AuthorizeException, ServletException, IOException,
+@@ -239,6 +241,7 @@
+      * @throws AuthorizeException
+      * @throws IOException
+      * @throws ServletException
++     * @throws DAVStatusException
+      */
+     abstract protected void put()
+         throws SQLException, AuthorizeException, ServletException, IOException,
+@@ -270,6 +273,34 @@
+     protected abstract Element typeValue();
+ 
+ 
++    /**
++     * Execute a DELETE method request on this Resource.  Inserts nothing
++     * into the <code>multistatus</code> XML element.
++     * @return HTTP extended status code, e.g. 200 for success.
++     * @throws SQLException
++     * @throws AuthorizeException
++     * @throws IOException
++     * @throws DAVStatusException
++     */
++    abstract protected int deleteInternal()
++        throws SQLException, AuthorizeException, IOException, DAVStatusException;
++
++
++    /**
++     * Execute a MKCOL method request on this Resource.  Inserts nothing
++     * into the <code>multistatus</code> XML element.  Only makes sense
++     * to do a MKCOL operation on Communities and Collections.
++     * @return HTTP extended status code, e.g. 200 for success.
++     * @throws SQLException
++     * @throws AuthorizeException
++     * @throws IOException
++     * @throws DAVStatusException
++     */
++    abstract protected int mkcolInternal(String name)
++        throws SQLException, AuthorizeException, IOException, DAVStatusException;
++
++
++
+     /*----------------- Interpreting Resource URIs -----------------------*/
+ 
+     /**
+@@ -623,7 +654,7 @@
+         outputRaw.output(outdoc, response.getOutputStream());
+ 
+         if (debugXML)
+-            log.debug("PROPPATCH resonse = "+outputPretty.outputString(outdoc));
++            log.debug("PROPPATCH response = "+outputPretty.outputString(outdoc));
+     }
+ 
+     /**
+@@ -1189,4 +1220,157 @@
+         }
+         return "";
+     }
++
++
++
++
++
++
++    /**
++     * Service routine for DELETE method on a resource:
++     */
++    protected void delete()
++        throws ServletException, SQLException, AuthorizeException, IOException,
++               DAVStatusException
++    {
++        // set all incoming encoding to UTF-8
++        request.setCharacterEncoding("UTF-8");
++
++        Document outdoc = deleteDriver(request.getInputStream());
++
++        response.setStatus(DAV.SC_MULTISTATUS);
++        response.setContentType("text/xml");
++        outputRaw.output(outdoc, response.getOutputStream());
++
++        if (debugXML)
++            log.debug("DELETE response = "+outputPretty.outputString(outdoc));
++    }
++
++    /**
++     * Inner logic for delete.
++     * Shared with SOAP servlet(??)
++     */
++    protected Document deleteDriver(InputStream docStream)
++        throws SQLException, AuthorizeException, IOException, DAVStatusException
++    {
++        Document reqdoc = null;
++        try
++        {
++            SAXBuilder builder = new SAXBuilder();
++            reqdoc = builder.build(docStream);
++        }
++        catch (JDOMParseException je)
++        {
++            // if there is no document we get error at line -1, so let it pass.
++            if (je.getLineNumber() >= 0)
++            {
++                log.error(LogManager.getHeader(context, "delete", je.toString()));
++                throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                        "Could not parse DELETE request document: "+je.toString());
++            }
++        }
++        catch (JDOMException je)
++        {
++            log.error(LogManager.getHeader(context, "delete", je.toString()));
++            throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                    "Could not parse DELETE request document: "+je.toString());
++        }
++        if (reqdoc == null)
++            throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                    "Failed to parse any valid DELETE document in request.");
++
++        Element pupdate = reqdoc.getRootElement();
++        if (!pupdate.getName().equals("delete"))
++        {
++            log.warn(LogManager.getHeader(context, "delete", "Got bad root element, XML="+pupdate.toString()));
++            throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                "Bad Root Element, must be delete");
++        }
++
++        deleteInternal();
++
++        Element multistatus = new Element("multistatus", DAV.NS_DAV);
++        Element msResponse = new Element("response", DAV.NS_DAV);
++        multistatus.addContent(msResponse);
++        Element href = new Element("href", DAV.NS_DAV);
++        msResponse.addContent(href);
++        href.addContent(hrefURL());
++        return new Document(multistatus);
++    }
++
++
++
++
++
++    /**
++     * Service routine for MKCOL method on a resource:
++     */
++    protected void mkcol()
++        throws ServletException, SQLException, AuthorizeException, IOException,
++               DAVStatusException
++    {
++        // set all incoming encoding to UTF-8
++        request.setCharacterEncoding("UTF-8");
++
++        Document outdoc = mkcolDriver(request.getInputStream());
++
++        response.setStatus(DAV.SC_MULTISTATUS);
++        response.setContentType("text/xml");
++        outputRaw.output(outdoc, response.getOutputStream());
++
++        if (debugXML)
++            log.debug("MKCOL response = "+outputPretty.outputString(outdoc));
++    }
++
++    /**
++     * Inner logic for mkcol.
++     * Shared with SOAP servlet(??)
++     */
++    protected Document mkcolDriver(InputStream docStream)
++        throws SQLException, AuthorizeException, IOException, DAVStatusException
++    {
++        Document reqdoc = null;
++        try
++        {
++            SAXBuilder builder = new SAXBuilder();
++            reqdoc = builder.build(docStream);
++        }
++        catch (JDOMParseException je)
++        {
++            // if there is no document we get error at line -1, so let it pass.
++            if (je.getLineNumber() >= 0)
++            {
++                log.error(LogManager.getHeader(context, "mkcol", je.toString()));
++                throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                        "Could not parse MKCOL request document: "+je.toString());
++            }
++        }
++        catch (JDOMException je)
++        {
++            log.error(LogManager.getHeader(context, "mkcol", je.toString()));
++            throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                    "Could not parse MKCOL request document: "+je.toString());
++        }
++        if (reqdoc == null)
++            throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                    "Failed to parse any valid MKCOL document in request.");
++
++        Element pupdate = reqdoc.getRootElement();
++        String newNodeName = null;
++        if (!pupdate.getName().equals("mkcol") || (newNodeName = pupdate.getValue()) == null)
++        {
++            log.warn(LogManager.getHeader(context, "mkcol", "Got bad root element, XML="+pupdate.toString()));
++            throw new DAVStatusException(HttpServletResponse.SC_BAD_REQUEST,
++                "Bad Root Element, must be mkcol");
++        }
++        mkcolInternal(newNodeName);
++
++        Element multistatus = new Element("multistatus", DAV.NS_DAV);
++        Element msResponse = new Element("response", DAV.NS_DAV);
++        multistatus.addContent(msResponse);
++        Element href = new Element("href", DAV.NS_DAV);
++        msResponse.addContent(href);
++        href.addContent(hrefURL());
++        return new Document(multistatus);
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVServlet.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVServlet.java
+--- src/org/dspace/app/dav/DAVServlet.java	2006-04-11 06:39:39.000000000 +0100
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVServlet.java	2007-04-17 15:02:26.000000000 +0100
+@@ -95,6 +95,7 @@
+     private static final String METHOD_MOVE = "MOVE";
+     private static final String METHOD_LOCK = "LOCK";
+     private static final String METHOD_UNLOCK = "UNLOCK";
++    private static final String METHOD_DELETE = "DELETE";
+ 
+     /**
+      * Method names of standard HTTP methods; we
+@@ -430,12 +431,19 @@
+                            HttpServletResponse response)
+         throws ServletException, IOException
+     {
++        // Fake new DAV methods not understood by the Apache Servlet base class (returns HTTP/500 when it sees unrecognised method)
++        // The way it is faked is by submitting "delete=true" in the PUT URL's query parameters (for a delete)
++        // The way it is faked is by submitting "mkcol=true" in the PUT URL's query parameters (for a mk-collection)
++        if (method.equals(METHOD_PUT) && request.getQueryString().indexOf("delete=true")>=0) method=METHOD_DELETE;
++        if (method.equals(METHOD_PUT) && request.getQueryString().indexOf("mkcol=true")>=0) method=METHOD_MKCOL;
++
+         // if not a DAV method (i.e. POST), defer to superclass.
+         if (!(method.equals(METHOD_PROPFIND) ||
+                    method.equals(METHOD_PROPPATCH) ||
+                    method.equals(METHOD_MKCOL) ||
+                    method.equals(METHOD_COPY) ||
+                    method.equals(METHOD_MOVE) ||
++                   method.equals(METHOD_DELETE) ||
+                    method.equals(METHOD_GET) ||
+                    method.equals(METHOD_PUT)))
+             return false;
+@@ -463,6 +471,10 @@
+                     resource.proppatch();
+                 else if (method.equals(METHOD_COPY))
+                     resource.copy();
++                else if (method.equals(METHOD_DELETE))
++                    resource.delete();
++                else if (method.equals(METHOD_MKCOL))
++                    resource.mkcol();
+                 else if (method.equals(METHOD_GET))
+                     resource.get();
+                 else if (method.equals(METHOD_PUT))
+@@ -470,13 +482,15 @@
+ 
+                 /** FIXME:
+                  * Someday implement handlers for these methods:
+-                 *  METHOD_MKCOL
++                 *  METHOD_MKCOL   -- in progress, Dr John Fawcett, johnf@caret.cam.ac.uk
+                  *  METHOD_MOVE
+-                 *  METHOD_DELETE
++                 *  METHOD_DELETE  -- in progress, Dr John Fawcett, johnf@caret.cam.ac.uk
+                  */
+ 
+                 else
+                     response.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED);
++                context.complete();
++                context = null;
+             }
+         }
+         catch (SQLException e)
+diff -U3 -r src/org/dspace/app/dav/DAVSite.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVSite.java
+--- src/org/dspace/app/dav/DAVSite.java	2006-01-14 06:26:54.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVSite.java	2007-04-17 15:20:44.000000000 +0100
+@@ -210,4 +210,19 @@
+         throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
+             "COPY method not implemented.");
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for Site.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for Site.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVWorkflow.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVWorkflow.java
+--- src/org/dspace/app/dav/DAVWorkflow.java	2006-01-12 05:14:22.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVWorkflow.java	2007-04-17 15:21:31.000000000 +0100
+@@ -220,4 +220,19 @@
+         throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
+             "COPY method not implemented for workflow.");
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for Workflow.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for Workflow.");
++    }
+ }
+diff -U3 -r src/org/dspace/app/dav/DAVWorkspace.java /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVWorkspace.java
+--- src/org/dspace/app/dav/DAVWorkspace.java	2006-01-12 05:14:09.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/DAVWorkspace.java	2007-04-17 15:21:51.000000000 +0100
+@@ -188,4 +188,19 @@
+         throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
+             "COPY method not implemented for workspace.");
+     }
++
++    protected int deleteInternal()
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_NOT_IMPLEMENTED,
++            "DELETE method not implemented for Workspace.");
++    }
++
++
++    protected int mkcolInternal(String waste)
++        throws DAVStatusException, SQLException, AuthorizeException, IOException
++    {
++        throw new DAVStatusException(HttpServletResponse.SC_METHOD_NOT_ALLOWED,
++            "MKCOL method not allowed for Workspace.");
++    }
+ }

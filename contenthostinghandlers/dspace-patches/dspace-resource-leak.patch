@@ -1,0 +1,127 @@
+--- src/org/dspace/app/dav/LNISoapServlet.java	2006-01-11 23:16:19.000000000 +0000
++++ /home/jkf/dspace141/dspace-1.4.1-source/src/org/dspace/app/dav/LNISoapServlet.java	2007-02-27 14:58:34.000000000 +0000
+@@ -202,10 +202,10 @@
+         if (uri.startsWith("/"))
+             uri = uri.substring(1);
+         String pathElt[] = uri.split("/");
+-
++	Context context = null;
+         try
+         {
+-            Context context = prologue();
++            context = prologue();
+ 
+             // return properties only for resources of these types, comma-sep list
+             String aTypes[] = (types == null) ? null : types.split(",");
+@@ -223,6 +223,8 @@
+                 {
+                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                     outputPretty.output(outdoc, baos);
++	    	    context.complete();
++		    context = null;
+                     return baos.toString();
+                 }
+                 else
+@@ -249,6 +251,10 @@
+         {
+             throw new LNIRemoteException("You are not authorized for the requested operation.", e);
+         }
++	finally
++	{
++		if (context != null) context.abort();
++	}
+     }
+ 
+     public String proppatch(String uri, String doc)
+@@ -259,9 +265,10 @@
+             uri = uri.substring(1);
+         String pathElt[] = uri.split("/");
+ 
++	Context context = null;
+         try
+         {
+-            Context context = prologue();
++            context = prologue();
+             DAVResource resource = DAVResource.findResource(context, null, null, pathElt);
+             if (resource == null)
+                 throw new LNIRemoteException("Resource not found.");
+@@ -273,6 +280,8 @@
+                 {
+                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                     outputPretty.output(outdoc, baos);
++		    context.complete();
++		    context = null;
+                     return baos.toString();
+                 }
+                 else
+@@ -299,6 +308,10 @@
+         {
+             throw new LNIRemoteException("You are not authorized for the requested operation.", e);
+         }
++	finally
++	{
++	    if (context != null) context.abort();
++	}
+     }
+ 
+     private static String lookupPathElt[] = {"lookup", "handle"};
+@@ -312,9 +325,10 @@
+     public String lookup(String handle, String bitstreamPid)
+         throws LNIRemoteException
+     {
++	Context context = null;
+         try
+         {
+-            Context context = prologue();
++            context = prologue();
+ 
+             // trim leading scheme if any:
+             if (handle.startsWith("hdl:"))
+@@ -324,6 +338,8 @@
+             String result = resource.makeURI(handle, bitstreamPid);
+             if (result == null)
+                 throw new LNIRemoteException("Resource not found.");
++	    context.complete();
++	    context = null;
+             return result;
+         }
+         catch (IOException ie)
+@@ -334,6 +350,10 @@
+         {
+             throw new LNIRemoteException("Failure accessing database", e);
+         }
++        finally
++        {
++            if (context != null) context.abort();
++        }
+     }
+ 
+ 
+@@ -346,13 +366,15 @@
+             source = source.substring(1);
+         String pathElt[] = source.split("/");
+ 
++	Context context = null;
+         try
+         {
+-            Context context = prologue();
++            context = prologue();
+             DAVResource resource = DAVResource.findResource(context, null, null, pathElt);
+             if (resource == null)
+                 throw new LNIRemoteException("Resource not found.");
+-
++	    context.complete();
++	    context = null;
+             return resource.copyDriver(destination, depth, overwrite, keepProperties);
+         }
+         catch (IOException ie)
+@@ -371,5 +393,9 @@
+         {
+             throw new LNIRemoteException("You are not authorized for the requested operation.", e);
+         }
++        finally
++        {
++            if (context != null) context.abort();
++        }
+     }
+ }
