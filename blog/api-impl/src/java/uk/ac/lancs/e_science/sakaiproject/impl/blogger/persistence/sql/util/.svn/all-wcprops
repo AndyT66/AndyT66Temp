@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util
+END
+ISQLGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/ISQLGenerator.java
+END
+SQLGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/SQLGenerator.java
+END
+HiperSonicGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/HiperSonicGenerator.java
+END
+MySQLGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/MySQLGenerator.java
+END
+OracleSQLGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/OracleSQLGenerator.java
+END

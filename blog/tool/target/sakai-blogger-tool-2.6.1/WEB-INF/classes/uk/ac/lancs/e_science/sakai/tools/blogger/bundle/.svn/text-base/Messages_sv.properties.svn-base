@@ -1,0 +1,85 @@
+#
+# Copyright (c) 2008 Sakai Foundation
+#
+# Licensed under the Educational Community License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.osedu.org/licenses/ECL-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# 
+
+#Stored by I18NEdit, may be edited!
+abstract=Sammanfattning
+addComment=L\u00E4gg till kommentar
+addToDocument=L\u00E4gg till dokument
+allowComments=Till\u00E5t kommenterar
+applyFilter=Anv\u00E4nd filter
+applyOnNonPrivate=Relevant f\u00F6r icke-privata inl\u00E4gg
+bloggerOf=Blogg f\u00F6r
+cancel=Avbryt
+commands=Kommandon
+confirm=Bekr\u00E4fta
+currentStructure=Nuvarande struktur
+delete=Ta bort
+description=Beskrivning
+edit=\u00C4ndra
+element=Element
+emptyBlogger=Denna blogg har inga inl\u00E4gg
+exampleURL=Exampel http\://www.su.se/
+fileName=Filnamn
+files=Filer
+filterByVisibility=Filtrera p\u00E5 accesstyp
+home=Visa alla
+image=Bild
+imageName=Bildnamn
+images=Bilder
+index=Index
+invalid_post_title=Du m\u00E5ste ange en titel, titeln f\u00E5r dock inte inneh\u00E5lla xml-kod.
+isCommentable=Detta inl\u00E4gg kan kommenteras av andra sajtmedlemmar
+isModificable=Detta inl\u00E4gg kan \u00E4ndras av andra sajtmedlemmar
+isPrivate=Detta inl\u00E4gg \u00E4r privat
+keywords=Nyckelord
+keywords_instruction=L\u00E4gg till nyckelord och separera dem med kommatecken
+last20=De senaste 20 inl\u00E4ggen
+lastEntries=Senaste inl\u00E4ggen
+linkDescription=L\u00E4nkbeskrivning
+linkURL=L\u00E4nk-URL
+links=L\u00E4nkar
+listOfSiteMembers=Sajtmedlemmar
+maxFileSize=Max 20 Mbyte.
+modifyInDocument=Modifiera i dokument (index
+msgs.applyOnNonPrivate=G\u00E4ller f\u00F6r icke-privata inl\u00E4gg
+new=Ny
+nonAvailableInPreview=L\u00E4nken \u00E4r ej tillg\u00E4nglig i f\u00F6rhandsgranskningen
+note=Notera
+noteImages=Bara JPEG- och GIF-filer mindre \u00E4n 4 Mbyte kommer att visas som bilder. Andra format kommer att visas som attachade filer.
+pagerNext=N\u00E4sta
+pagerPrev=F\u00F6reg\u00E5ende
+postComments=Kommentarer
+postCreator=\u00C4gare
+postDate=Datum
+postEditor=Editor
+postMainText=Text
+postTitle=Rubrik
+postVisibility=Tillg\u00E4nglighet
+preview=F\u00F6rhandsgranska
+readOnly=Endast l\u00E4s
+resetEditor=\u00C5terst\u00E4ll editorn
+save=Spara
+search=S\u00F6k
+show=Visa
+showAll=Visa alla
+showComments=Visa kommentarer
+showFullContent=Visa hela inl\u00E4gget
+sureDelete=\u00C4r du s\u00E4ker p\u00E5 att du vill ta bort inl\u00E4gget?
+text=Text
+title=Blogg
+viewMembersBlog=Visa medlemmars bloggar
+viewMyBlog=Visa min blogg
+yourComment=Din kommentar

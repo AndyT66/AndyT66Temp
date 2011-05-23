@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib
+END
+jsf-api-1.1.01.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/jsf-api-1.1.01.jar
+END
+tomahawk-1.1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/tomahawk-1.1.6.jar
+END
+sakai-jsf-widgets-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-jsf-widgets-2.6.1.jar
+END
+sakai-blogger-api-impl-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-blogger-api-impl-2.6.1.jar
+END
+sakai-blogger-api-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-blogger-api-2.6.1.jar
+END
+sakai-jsf-widgets-sun-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-jsf-widgets-sun-2.6.1.jar
+END
+commons-digester-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/commons-digester-1.6.jar
+END
+sakai-jsf-tool-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-jsf-tool-2.6.1.jar
+END
+commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/commons-codec-1.3.jar
+END
+sakai-jsf-app-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-jsf-app-2.6.1.jar
+END
+sakai-blogger-jsf-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-blogger-jsf-2.6.1.jar
+END
+sakai-blogger-fileUpload-2.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-blogger-fileUpload-2.6.1.jar
+END
+commons-validator-1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/commons-validator-1.3.1.jar
+END
+jsf-impl-1.1.01.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/jsf-impl-1.1.01.jar
+END
+sakai-kernel-util-1.0.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/sakai-kernel-util-1.0.12.jar
+END
+standard-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/standard-1.0.4.jar
+END
+commons-beanutils-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/commons-beanutils-1.7.0.jar
+END
+oro-2.0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/lib/oro-2.0.8.jar
+END

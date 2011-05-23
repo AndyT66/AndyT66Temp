@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger
+END
+PostViewerController.class
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/PostViewerController.class
+END
+PreviewPostController.class
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/PreviewPostController.class
+END
+PostCreateController.class
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/PostCreateController.class
+END
+SakaiBean.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/SakaiBean.class
+END
+AddCommentController.class
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/AddCommentController.class
+END
+MemberComparator.class
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/MemberComparator.class
+END
+PostEditController.class
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/PostEditController.class
+END
+BloggerController.class
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/BloggerController.class
+END
+PostListViewerController.class
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/PostListViewerController.class
+END
+PostEditionAbstractController.class
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/classes/uk/ac/lancs/e_science/sakai/tools/blogger/PostEditionAbstractController.class
+END

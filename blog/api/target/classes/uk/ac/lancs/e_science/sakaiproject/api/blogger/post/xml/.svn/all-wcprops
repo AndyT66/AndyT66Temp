@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml
+END
+FileProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/FileProcessingState.class
+END
+StateProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/StateProcessingState.class
+END
+XMLPostContentHandleState.class
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/XMLPostContentHandleState.class
+END
+XMLPostContentHandler.class
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/XMLPostContentHandler.class
+END
+CommentCreatorProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/CommentCreatorProcessingState.class
+END
+ImageProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/ImageProcessingState.class
+END
+RootProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/RootProcessingState.class
+END
+CommentsProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/CommentsProcessingState.class
+END
+LinkRuleProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/LinkRuleProcessingState.class
+END
+KeywordsProcessingState.class
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/KeywordsProcessingState.class
+END
+XMLToPost.class
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/xml/XMLToPost.class
+END

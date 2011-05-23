@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/sorter
+END
+VisibilityComparator.class
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/sorter/VisibilityComparator.class
+END
+IdCreatorComparator.class
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/sorter/IdCreatorComparator.class
+END
+DateComparator.class
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/sorter/DateComparator.class
+END
+TitleComparator.class
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/sorter/TitleComparator.class
+END

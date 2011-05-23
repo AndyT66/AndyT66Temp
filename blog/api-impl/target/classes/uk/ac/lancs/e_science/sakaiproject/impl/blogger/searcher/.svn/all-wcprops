@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/searcher
+END
+SearchEngine.class
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/searcher/SearchEngine.class
+END
+SearchException.class
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/searcher/SearchException.class
+END

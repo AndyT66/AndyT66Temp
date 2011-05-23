@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post
+END
+Creator.class
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Creator.class
+END
+File.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/File.class
+END
+PostElement.class
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/PostElement.class
+END
+State.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/State.class
+END
+PostUtilities.class
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/PostUtilities.class
+END
+Comment.class
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Comment.class
+END
+Image.class
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Image.class
+END
+LinkRule.class
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/LinkRule.class
+END
+Paragraph.class
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Paragraph.class
+END
+Post.class
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/target/classes/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Post.class
+END

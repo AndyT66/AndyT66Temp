@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post
+END
+Creator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Creator.java
+END
+File.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/File.java
+END
+PostElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/PostElement.java
+END
+State.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/State.java
+END
+PostUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/PostUtilities.java
+END
+Comment.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Comment.java
+END
+Image.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Image.java
+END
+LinkRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/LinkRule.java
+END
+Paragraph.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Paragraph.java
+END
+Post.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/Post.java
+END

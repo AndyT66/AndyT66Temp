@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/converters
+END
+VisibilityConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/converters/VisibilityConverter.java
+END
+DateConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/converters/DateConverter.java
+END
+BodyToSummaryConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/converters/BodyToSummaryConverter.java
+END
+BodyToTextConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/converters/BodyToTextConverter.java
+END

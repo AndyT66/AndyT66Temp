@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>blog-base</artifactId>
+    <groupId>org.sakaiproject</groupId>
+    <version>2.6.1</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <name>sakai-blogger-api-impl</name>
+  <artifactId>sakai-blogger-api-impl</artifactId>
+  <groupId>org.sakaiproject</groupId>
+  <organization>
+    <name>Lancaster Centre for e-Science</name>
+    <url>http://e-science.lancs.ac.uk</url>
+  </organization>
+  <inceptionYear>2005</inceptionYear>
+  <developers>
+    <developer>
+      <name>Adrian Fish</name>
+      <email>a.fish@lancaster.ac.uk</email>
+    </developer>
+    <developer>
+      <name>Miguel Gonzalez Losa</name>
+      <email>m.gonzalez@lancaster.ac.uk</email>
+    </developer>
+  </developers>
+  <packaging>jar</packaging>
+  <properties>
+    <deploy.target/>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.sakaiproject.kernel</groupId>
+      <artifactId>sakai-kernel-util</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.sakaiproject.kernel</groupId>
+      <artifactId>sakai-kernel-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.sakaiproject.kernel</groupId>
+      <artifactId>sakai-component-manager</artifactId>
+    </dependency>
+<!--
+      This has been relocated to sakai-kernel-util
+      org.sakaiproject.kernel.utilsakai-entity-util-->
+    <dependency>
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-blogger-api</artifactId>
+      <version>${sakai.version}</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.8</version>
+      <type>jar</type>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <resources/>
+  </build>
+</project>

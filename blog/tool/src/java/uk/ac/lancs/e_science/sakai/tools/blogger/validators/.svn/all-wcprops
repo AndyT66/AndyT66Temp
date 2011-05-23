@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/validators
+END
+DateValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/validators/DateValidator.java
+END
+PostTitleValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/validators/PostTitleValidator.java
+END

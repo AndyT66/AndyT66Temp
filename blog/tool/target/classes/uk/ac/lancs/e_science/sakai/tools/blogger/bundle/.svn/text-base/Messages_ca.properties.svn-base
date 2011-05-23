@@ -1,0 +1,95 @@
+#
+# Copyright (c) 2009 Sakai Foundation
+#
+# Licensed under the Educational Community License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.osedu.org/licenses/ECL-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# 
+lastEntries=Darreres entrades
+title=Blogger
+search=Cercar
+edit=Editar
+save=Guardar
+show=Mostrar
+preview=Previsualitzar
+showAll=Mostrar tot
+home=Inici
+edit=Editar
+new=Nou
+search=Cercar
+delete=Suprimir
+cancel=Cancel·lar
+msgs.applyOnNonPrivate= Aplicable a entrades no privades
+readOnly=Només lectura
+note=Anotació
+noteImages=Només fitxers JPEG i GIF de menys de 4 Mbytes podran mostrar-se com imatges. Altres formats seran tratats com fitxers adjunts.
+maxFileSize=Mida màxima permessa 20Mbytes.
+
+currentStructure=Estructura actual
+allowComments=Permetre comentaris
+addComment=Afegir comentari
+yourComment=El seu comentari
+last20=Els darrers 20 enviats
+pagerPrev=Previ
+pagerNext=Següent
+filterByVisibility=Filtrar per tipus d'accés
+applyFilter=Aplicar filtre
+confirm=Confirmar
+sureDelete=Estar segur de voler suprimir l'enviament?
+
+
+
+postEditor=Editor
+
+postTitle=Títol
+keywords=Paraules clau
+abstract=Resum
+postDate=Data
+postMainText=Cos
+postCreator=Creador
+postVisibility=Accés
+postComments=Comentaris
+
+text=Text
+images=Imatges
+links=Enllaços
+files=Fitxers
+
+index=Índex
+element=Element
+commands=Comandes
+linkDescription=Descripció de l'enllaç
+linkURL=Enllaç URL
+
+imageName=Nom imatge
+image=Imatge
+description=Descripció
+addToDocument=Afegir al document
+modifyInDocument=Modificar en el document (index
+fileName=Nom de fitxer
+resetEditor=Reiniciar editor
+
+#Sakai2009
+exampleURL=Exemple http://www.mypage.co.uk
+invalid_post_title=Heu d'afegir un títol. El títol no pot incloure codi XML.
+keywords_instruction=Afegiu paraules clau separades per una coma.
+applyOnNonPrivate=Aplicable a entrades públiques
+bloggerOf=Bloc de
+emptyBlogger=Aquest bloc no té entrades
+isCommentable=Altres usuaris poden deixar comentaris sobre aquesta entrada
+isModificable=Altres usuaris poden modificar aquesta entrada
+isPrivate=Aquesta entrada és privada
+listOfSiteMembers=Membres del lloc
+nonAvailableInPreview=Enllaç no disponible en la modalitat de vista preliminar
+showComments=Mostrar comentaris
+showFullContent=Mostrar tot el contingut
+viewMembersBlog=Veure el bloc d'aquest membre
+viewMyBlog=Veure el meu bloc

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload
+END
+UploadRenderer.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload/UploadRenderer.class
+END
+UploadFilter$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload/UploadFilter$1.class
+END
+UploadFilter$BufferedHttpServletRequestWrapper.class
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload/UploadFilter$BufferedHttpServletRequestWrapper.class
+END
+UploadTag.class
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload/UploadTag.class
+END
+UploadFilter$BufferedServletInputStream.class
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload/UploadFilter$BufferedServletInputStream.class
+END
+UserBean.class
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload/UserBean.class
+END
+UploadFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/fileUpload/target/classes/uk/ac/lancs/e_science/fileUpload/UploadFilter.class
+END

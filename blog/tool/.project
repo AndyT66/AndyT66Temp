@@ -1,0 +1,24 @@
+<projectDescription>
+  <name>sakai-blogger-tool</name>
+  <comment/>
+  <projects>
+    <project>sakai-blogger-api</project>
+    <project>sakai-blogger-api-impl</project>
+    <project>sakai-blogger-fileUpload</project>
+    <project>sakai-blogger-jsf</project>
+    <project>sakai-depend-jsf-widgets-sun</project>
+    <project>sakai-jsf-app</project>
+    <project>sakai-jsf-sun-ri-tool</project>
+    <project>sakai-jsf-tool</project>
+    <project>sakai-jsf-widgets</project>
+    <project>sakai-jsf-widgets-sun</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>

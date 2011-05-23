@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/reader
+END
+PostReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/reader/PostReader.java
+END
+XMLConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/reader/XMLConverter.java
+END
+PostConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api/src/java/uk/ac/lancs/e_science/sakaiproject/api/blogger/post/reader/PostConverter.java
+END

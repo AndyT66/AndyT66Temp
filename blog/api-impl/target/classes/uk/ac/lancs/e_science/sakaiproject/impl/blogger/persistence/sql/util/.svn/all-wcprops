@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util
+END
+MySQLGenerator.class
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/MySQLGenerator.class
+END
+OracleSQLGenerator.class
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/OracleSQLGenerator.class
+END
+ISQLGenerator.class
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/ISQLGenerator.class
+END
+SQLGenerator.class
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/SQLGenerator.class
+END
+HiperSonicGenerator.class
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/sql/util/HiperSonicGenerator.class
+END

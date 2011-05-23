@@ -1,0 +1,40 @@
+            <h:dataTable id="result"
+                styleClass="chefFlatListViewTable"
+                value="#{mainTool.lastPosts}"
+                var="post">
+                 <h:column>
+                    <f:facet name="header">
+                        <h:outputText  value="#{msgs.postTitle}"/>
+                    </f:facet>
+                    <h:commandLink
+                        id="title"
+                        title="#{post.title}"
+                        action="#{postListViewerController.doShowPost}">
+                        <h:outputText value="#{post.title}"/>
+                    </h:commandLink>
+                 </h:column>
+                 <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="#{msgs.postDate}"/>
+                    </f:facet>
+                    <h:outputText value="#{post.date}">
+                        <f:convertDateTime/>
+                    </h:outputText>
+                </h:column>
+                 <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="#{msgs.postCreator}"/>
+                    </f:facet>
+                    <h:outputText value="#{post.creator.description}">
+                    </h:outputText>
+                </h:column>
+                 <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="#{msgs.postVisibility}"/>
+                    </f:facet>
+                    <h:outputText value="#{post.state.visibility}">
+                        <f:converter converterId="VisibilityCode"/>
+                    </h:outputText>
+                </h:column>
+             </h:dataTable>
+

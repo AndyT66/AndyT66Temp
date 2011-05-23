@@ -1,0 +1,7 @@
+*.class
+*.bak
+*.jar
+*.pkg
+*.zip
+*.war
+*.sql

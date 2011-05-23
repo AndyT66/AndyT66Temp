@@ -1,0 +1,83 @@
+
+#
+# Copyright (c) 2009 Sakai Foundation
+#
+# Licensed under the Educational Community License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.osedu.org/licenses/ECL-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# 
+abstract = \u6458\u8981 
+addComment = \u65b0\u589e\u8a55\u8ad6 
+addToDocument = \u65b0\u589e\u81f3\u6587\u4ef6 
+allowComments = \u5141\u8a31\u8a3b\u89e3 
+applyFilter = \u5957\u7528\u904e\u6ffe 
+cancel = \u53d6\u6d88 
+commands = \u547d\u4ee4 
+confirm = \u78ba\u8a8d 
+currentStructure = \u76ee\u524d\u7684\u7d50\u69cb 
+delete = \u522a\u9664 
+description = \u63cf\u8ff0 
+edit = \u7de8\u8f2f 
+element = \u5143\u7d20 
+exampleURL = Example http\://www.mypage.com 
+fileName = \u6a94\u6848\u540d\u7a31 
+files = \u6a94\u6848 
+filterByVisibility = \u6309\u5b58\u53d6\u985e\u578b\u904e\u6ffe 
+home = \u6aa2\u8996\u5168\u90e8 
+image = \u5f71\u50cf 
+imageName = \u5f71\u50cf\u540d\u7a31 
+images = \u5f71\u50cf 
+index = \u7d22\u5f15 
+keywords = \u95dc\u9375\u5b57 
+keywords_instruction = \u65b0\u589e\u95dc\u9375\u5b57\u7531\u9017\u865f\u5206\u958b 
+last20 = \u524d20\u9805 
+lastEntries = \u6700\u5f8c\u689d\u76ee 
+linkDescription = \u9023\u7d50\u63cf\u8ff0 
+linkURL = URL\u9023\u7d50 
+links = \u9023\u7d50 
+maxFileSize = \u6700\u5927\u5141\u8a31\u662f 20 \u767e\u842c\u4f4d\u5143 (20MB)\u3002 
+modifyInDocument = \u4fee\u6539 
+applyOnNonPrivate = \u53ef\u9069\u7528\u65bc\u975e\u79c1\u4eba\u7684\u9805\u76ee\u3002 
+new = \u5efa\u7acb\u65b0\u767c\u4f48 
+note = \u8a3b\u91cb 
+noteImages = \u53ea\u6709JPEG\u548cGIF\u6a94\u6848\u5c0f\u65bc4 \u767e\u842c\u4f4d\u5143(4MB)\u6703\u986f\u793a\u70ba\u5f71\u50cf\u3002\u5176\u4ed6\u683c\u5f0f\u5c07\u88ab\u8996\u70ba\u9644\u52a0\u7684\u6a94\u6848\u3002 
+pagerNext = \u4e0b\u4e00\u9801 
+pagerPrev = \u4e0a\u4e00\u500b 
+postComments = \u8a3b\u89e3 
+postCreator = \u5efa\u7acb\u4eba 
+postDate = \u65e5\u671f 
+postEditor = \u767c\u4f48\u7de8\u8f2f\u8005 
+postMainText = \u6b63\u6587 
+postTitle = \u6a19\u984c 
+postVisibility = \u5b58\u53d6 
+preview = \u9810\u89bd 
+readOnly = \u552f\u8b80 
+resetEditor = \u91cd\u8a2d\u7de8\u8f2f\u5668 
+save = \u5132\u5b58 
+search = \u641c\u5c0b 
+show = \u986f\u793a 
+showAll = \u5168\u90e8\u986f\u793a 
+sureDelete = \u60a8\u662f\u5426\u78ba\u5b9a\u8981\u522a\u9664\u6b64\u5f35\u8cbc\uff1f 
+text = \u6587\u5b57 
+title = \u90e8\u843d\u683c 
+yourComment = \u60a8\u7684\u8a3b\u89e3 
+invalid_post_title = \u60a8\u5fc5\u9808\u65b0\u589e\u6a19\u984c\u3002\u6a19\u984c\u4e0d\u80fd\u5305\u542b XML \u6a19\u8a18\u3002 
+nonAvailableInPreview = \u9023\u7d50\u4e0d\u53ef\u7528\u5728\u9810\u89bd\u6a21\u5f0f 
+showComments = \u986f\u793a\u8a55\u8ad6 
+showFullContent = \u986f\u793a\u5168\u90e8\u5167\u5bb9 
+viewMembersBlog = \u6aa2\u8996\u6210\u54e1\u7684\u90e8\u843d\u683c 
+bloggerOf = \u90e8\u843d\u683c\u7684 
+listOfSiteMembers = \u7db2\u7ad9\u7684\u6210\u54e1 
+viewMyBlog = \u6aa2\u8996\u6211\u7684\u90e8\u843d\u683c 
+emptyBlogger = \u6b64\u90e8\u843d\u683c\u6ca1\u6709\u4efb\u4f55\u9805\u76ee 
+isPrivate = \u9019\u5f35\u8cbc\u662f\u79c1\u6709\u7684 
+isModificable = \u9019\u5f35\u8cbc\u53ef\u7531\u5176\u4ed6\u7db2\u7ad9\u6210\u54e1\u9032\u884c\u4fee\u6539 
+isCommentable = \u9019\u5f35\u8cbc\u53ef\u7531\u5176\u4ed6\u7db2\u7ad9\u6210\u54e1\u9032\u884c\u8a55\u8ad6 

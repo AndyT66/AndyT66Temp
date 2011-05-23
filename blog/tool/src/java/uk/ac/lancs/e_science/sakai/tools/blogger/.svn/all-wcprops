@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger
+END
+AddCommentController.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/AddCommentController.java
+END
+MemberComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/MemberComparator.java
+END
+PostEditController.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/PostEditController.java
+END
+BloggerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/BloggerController.java
+END
+PostListViewerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/PostListViewerController.java
+END
+PostEditionAbstractController.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/PostEditionAbstractController.java
+END
+PostViewerController.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/PostViewerController.java
+END
+PreviewPostController.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/PreviewPostController.java
+END
+PostCreateController.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/PostCreateController.java
+END
+SakaiBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/java/uk/ac/lancs/e_science/sakai/tools/blogger/SakaiBean.java
+END

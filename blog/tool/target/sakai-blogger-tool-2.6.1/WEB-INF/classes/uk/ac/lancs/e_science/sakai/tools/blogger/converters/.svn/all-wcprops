@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/classes/uk/ac/lancs/e_science/sakai/tools/blogger/converters
+END
+BodyToTextConverter.class
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/classes/uk/ac/lancs/e_science/sakai/tools/blogger/converters/BodyToTextConverter.class
+END
+VisibilityConverter.class
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/classes/uk/ac/lancs/e_science/sakai/tools/blogger/converters/VisibilityConverter.class
+END
+DateConverter.class
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/classes/uk/ac/lancs/e_science/sakai/tools/blogger/converters/DateConverter.class
+END
+BodyToSummaryConverter.class
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/target/sakai-blogger-tool-2.6.1/WEB-INF/classes/uk/ac/lancs/e_science/sakai/tools/blogger/converters/BodyToSummaryConverter.class
+END

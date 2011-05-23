@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence
+END
+PersistenceException.class
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/PersistenceException.class
+END
+SakaiPersistenceManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/target/classes/uk/ac/lancs/e_science/sakaiproject/impl/blogger/persistence/SakaiPersistenceManager.class
+END

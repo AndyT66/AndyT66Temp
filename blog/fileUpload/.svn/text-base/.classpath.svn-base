@@ -1,0 +1,12 @@
+<classpath>
+  <classpathentry kind="src" path="src/java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-fileupload/commons-fileupload/1.1.1/commons-fileupload-1.1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/jsf/jsf-api/1.1.01/jsf-api-1.1.01.jar"/>
+  <classpathentry kind="var" path="M2_REPO/jsf/jsf-impl/1.1.01/jsf-impl-1.1.01.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/sakaiproject/kernel/sakai-component-manager/1.0.12/sakai-component-manager-1.0.12.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+</classpath>

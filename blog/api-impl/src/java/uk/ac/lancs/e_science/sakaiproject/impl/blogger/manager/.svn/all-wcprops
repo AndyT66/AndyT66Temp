@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/manager
+END
+PostManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/manager/PostManager.java
+END
+SearchManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/manager/SearchManager.java
+END
+SecurityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/src/java/uk/ac/lancs/e_science/sakaiproject/impl/blogger/manager/SecurityManager.java
+END

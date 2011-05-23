@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger
+END
+OutputPostTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/OutputPostTag.java
+END
+PostWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/PostWriter.java
+END
+UIOutputPost.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/UIOutputPost.java
+END
+ListOfPostsTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/ListOfPostsTag.java
+END
+EditPostTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/EditPostTag.java
+END
+UIListOfPosts.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/UIListOfPosts.java
+END
+UIEditPost.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/UIEditPost.java
+END
+LegendWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/LegendWriter.java
+END
+IBloggerJSFEditionController.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/jsfComponent/src/java/uk/ac/lancs/e_science/jsf/components/blogger/IBloggerJSFEditionController.java
+END

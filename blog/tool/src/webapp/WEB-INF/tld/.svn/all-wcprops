@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/webapp/WEB-INF/tld
+END
+blogger.tld
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/webapp/WEB-INF/tld/blogger.tld
+END
+html_basic-1.1.1.tld
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/webapp/WEB-INF/tld/html_basic-1.1.1.tld
+END
+upload.tld
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/webapp/WEB-INF/tld/upload.tld
+END
+jsf_core-1.1.1.tld
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/webapp/WEB-INF/tld/jsf_core-1.1.1.tld
+END
+sakai-jsf.tld
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/tool/src/webapp/WEB-INF/tld/sakai-jsf.tld
+END

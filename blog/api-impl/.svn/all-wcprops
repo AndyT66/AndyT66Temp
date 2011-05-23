@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/.project
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/clif/!svn/ver/3/Sakai/sakai-2.6.1/blog/api-impl/pom.xml
+END
